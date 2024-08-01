@@ -8,21 +8,21 @@ export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/c
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
-export const STABILITY_BASE_URL = "https://api.stability.ai";
+export const STABILITY_BASE_URL = "https://api.laodong.com";
 
-export const DEFAULT_API_HOST = "https://api.nextchat.dev";
-export const OPENAI_BASE_URL = "https://api.openai.com";
-export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
+export const DEFAULT_API_HOST = "https://api.laodong.com";
+export const OPENAI_BASE_URL = "https://api.laodong.com";
+export const ANTHROPIC_BASE_URL = "https://api.laodong.com";
 
-export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
+export const GEMINI_BASE_URL = "https://api.laodong.com";
 
-export const BAIDU_BASE_URL = "https://aip.baidubce.com";
+export const BAIDU_BASE_URL = "https://api.laodong.com";
 export const BAIDU_OATUH_URL = `${BAIDU_BASE_URL}/oauth/2.0/token`;
 
-export const BYTEDANCE_BASE_URL = "https://ark.cn-beijing.volces.com";
+export const BYTEDANCE_BASE_URL = "https://api.laodong.com";
 
-export const ALIBABA_BASE_URL = "https://dashscope.aliyuncs.com/api/";
-export const MOONSHOT_BASE_URL = "https://api.moonshot.cn";
+export const ALIBABA_BASE_URL = "https://api.laodong.com";
+export const MOONSHOT_BASE_URL = "https://api.laodong.com";
 
 export const CACHE_URL_PREFIX = "/api/cache";
 export const UPLOAD_URL = `${CACHE_URL_PREFIX}/upload`;
@@ -230,22 +230,19 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
-  "gpt-3.5-turbo",
-  "gpt-3.5-turbo-1106",
-  "gpt-3.5-turbo-0125",
-  "gpt-4",
-  "gpt-4-0613",
-  "gpt-4-32k",
-  "gpt-4-32k-0613",
-  "gpt-4-turbo",
-  "gpt-4-turbo-preview",
-  "gpt-4o",
-  "gpt-4o-2024-05-13",
   "gpt-4o-mini",
-  "gpt-4o-mini-2024-07-18",
+  "gpt-4",
+  "gpt-4-turbo",
+  "gpt-4o",
   "gpt-4-vision-preview",
-  "gpt-4-turbo-2024-04-09",
-  "gpt-4-1106-preview",
+  "gpt-4-all",
+  "gemini-1.5-pro-latest",
+  "gemini-1.5-flash-latest",
+  "gemini-pro-vision",
+  "claude-3-sonnet-20240229",
+  "claude-3-opus-20240229",
+  "claude-3-haiku-20240307",
+  "claude-3-5-sonnet-20240620",
 ];
 
 const googleModels = [

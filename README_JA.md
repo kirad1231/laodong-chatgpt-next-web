@@ -202,13 +202,13 @@ ByteDance API の URL。
 
 ### `CUSTOM_MODELS` （オプション）
 
-> 例：`+qwen-7b-chat,+glm-6b,-gpt-3.5-turbo,gpt-4-1106-preview=gpt-4-turbo` は `qwen-7b-chat` と `glm-6b` をモデルリストに追加し、`gpt-3.5-turbo` を削除し、`gpt-4-1106-preview` のモデル名を `gpt-4-turbo` として表示します。
-> すべてのモデルを無効にし、特定のモデルを有効にしたい場合は、`-all,+gpt-3.5-turbo` を使用します。これは `gpt-3.5-turbo` のみを有効にすることを意味します。
+> 例：`+qwen-7b-chat,+glm-6b,-gpt-4o-mini,gpt-4-1106-preview=gpt-4-turbo` は `qwen-7b-chat` と `glm-6b` をモデルリストに追加し、`gpt-4o-mini` を削除し、`gpt-4-1106-preview` のモデル名を `gpt-4-turbo` として表示します。
+> すべてのモデルを無効にし、特定のモデルを有効にしたい場合は、`-all,+gpt-4o-mini` を使用します。これは `gpt-4o-mini` のみを有効にすることを意味します。
 
 モデルリストを管理します。`+` でモデルを追加し、`-` でモデルを非表示にし、`モデル名=表示名` でモデルの表示名をカスタマイズし、カンマで区切ります。
 
 Azure モードでは、`modelName@azure=deploymentName` 形式でモデル名とデプロイ名（deploy-name）を設定できます。
-> 例：`+gpt-3.5-turbo@azure=gpt35` この設定でモデルリストに `gpt35(Azure)` のオプションが表示されます。
+> 例：`+gpt-4o-mini@azure=gpt35` この設定でモデルリストに `gpt35(Azure)` のオプションが表示されます。
 
 ByteDance モードでは、`modelName@bytedance=deploymentName` 形式でモデル名とデプロイ名（deploy-name）を設定できます。
 > 例: `+Doubao-lite-4k@bytedance=ep-xxxxx-xxx` この設定でモデルリストに `Doubao-lite-4k(ByteDance)` のオプションが表示されます。

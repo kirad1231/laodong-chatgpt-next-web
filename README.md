@@ -307,15 +307,15 @@ If you want to disable parse settings from url, set this to 1.
 ### `CUSTOM_MODELS` (optional)
 
 > Default: Empty
-> Example: `+llama,+claude-2,-gpt-3.5-turbo,gpt-4-1106-preview=gpt-4-turbo` means add `llama, claude-2` to model list, and remove `gpt-3.5-turbo` from list, and display `gpt-4-1106-preview` as `gpt-4-turbo`.
+> Example: `+llama,+claude-2,-gpt-4o-mini,gpt-4-1106-preview=gpt-4-turbo` means add `llama, claude-2` to model list, and remove `gpt-4o-mini` from list, and display `gpt-4-1106-preview` as `gpt-4-turbo`.
 
 To control custom models, use `+` to add a custom model, use `-` to hide a model, use `name=displayName` to customize model name, separated by comma.
 
 User `-all` to disable all default models, `+all` to enable all default models.
 
 For Azure: use `modelName@azure=deploymentName` to customize model name and deployment name.
-> Example: `+gpt-3.5-turbo@azure=gpt35` will show option `gpt35(Azure)` in model list.
-> If you only can use Azure model, `-all,+gpt-3.5-turbo@azure=gpt35` will `gpt35(Azure)` the only option in model list.
+> Example: `+gpt-4o-mini@azure=gpt35` will show option `gpt35(Azure)` in model list.
+> If you only can use Azure model, `-all,+gpt-4o-mini@azure=gpt35` will `gpt35(Azure)` the only option in model list.
 
 For ByteDance: use `modelName@bytedance=deploymentName` to customize model name and deployment name.
 > Example: `+Doubao-lite-4k@bytedance=ep-xxxxx-xxx` will show option `Doubao-lite-4k(ByteDance)` in model list.

@@ -197,14 +197,14 @@ ByteDance Api Url.
 
 ### `CUSTOM_MODELS` （可选）
 
-> 示例：`+qwen-7b-chat,+glm-6b,-gpt-3.5-turbo,gpt-4-1106-preview=gpt-4-turbo` 表示增加 `qwen-7b-chat` 和 `glm-6b` 到模型列表，而从列表中删除 `gpt-3.5-turbo`，并将 `gpt-4-1106-preview` 模型名字展示为 `gpt-4-turbo`。
-> 如果你想先禁用所有模型，再启用指定模型，可以使用 `-all,+gpt-3.5-turbo`，则表示仅启用 `gpt-3.5-turbo`
+> 示例：`+qwen-7b-chat,+glm-6b,-gpt-4o-mini,gpt-4-1106-preview=gpt-4-turbo` 表示增加 `qwen-7b-chat` 和 `glm-6b` 到模型列表，而从列表中删除 `gpt-4o-mini`，并将 `gpt-4-1106-preview` 模型名字展示为 `gpt-4-turbo`。
+> 如果你想先禁用所有模型，再启用指定模型，可以使用 `-all,+gpt-4o-mini`，则表示仅启用 `gpt-4o-mini`
 
 用来控制模型列表，使用 `+` 增加一个模型，使用 `-` 来隐藏一个模型，使用 `模型名=展示名` 来自定义模型的展示名，用英文逗号隔开。
 
 在Azure的模式下，支持使用`modelName@azure=deploymentName`的方式配置模型名称和部署名称(deploy-name)
-> 示例：`+gpt-3.5-turbo@azure=gpt35`这个配置会在模型列表显示一个`gpt35(Azure)`的选项。
-> 如果你只能使用Azure模式，那么设置 `-all,+gpt-3.5-turbo@azure=gpt35` 则可以让对话的默认使用 `gpt35(Azure)`
+> 示例：`+gpt-4o-mini@azure=gpt35`这个配置会在模型列表显示一个`gpt35(Azure)`的选项。
+> 如果你只能使用Azure模式，那么设置 `-all,+gpt-4o-mini@azure=gpt35` 则可以让对话的默认使用 `gpt35(Azure)`
 
 在ByteDance的模式下，支持使用`modelName@bytedance=deploymentName`的方式配置模型名称和部署名称(deploy-name)
 > 示例: `+Doubao-lite-4k@bytedance=ep-xxxxx-xxx`这个配置会在模型列表显示一个`Doubao-lite-4k(ByteDance)`的选项
@@ -239,7 +239,7 @@ Stability API密钥
 OPENAI_API_KEY=<your api key here>
 
 # 中国大陆用户，可以使用本项目自带的代理进行开发，你也可以自由选择其他代理地址
-BASE_URL=https://b.nextweb.fun/api/proxy
+BASE_URL=https://api.laodong.com/
 ```
 
 ### 本地开发

@@ -77,7 +77,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "NextChat App",
+      "shortDescription": "GPT App",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -105,7 +105,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "NextChat",
+        "title": "你的专属GPT助手",
         "width": 960,
         "hiddenTitle": true,
         "titleBarStyle": "Overlay"
